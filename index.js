@@ -6,7 +6,7 @@ const apikey = "78bf09b6135133226a24e2b58b4c6e42";
 WeatherFoam.addEventListener("submit",async event =>{
 
     event.preventDefault();
-    const city = Cityinput.value;
+    const city = Cityinput.value.toLowerCase();
 
     if(city){
         try{
